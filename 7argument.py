@@ -26,6 +26,7 @@ pow(b=5,a=2)
 #iv)Variable length arguments
 #The single argument cant accept all the
 #parameters to make it possible use *
+#The datas are stored in tuple format
 def pizza(*toppings):
     print(toppings)
 pizza("cheese")
@@ -40,6 +41,7 @@ piz("abhi","cheese","onion","olives",crust="corn")
 
 #v)Variable length keyword argument
 #To accept the values with their key add **
+#The datas are stored in dictionary format
 def std(**data):
     print(data)
     print(type(data))

@@ -38,10 +38,10 @@
 # s11="world"
 # print(id(s10))
 # print(id(s11))
-# print(s10[4])
+# print(s10[4])  
 # print(s11[1])
-# print(id(s10[4]))
-# print(id(s11[1]))
+# print(id(s10[4]))     #\Both shares same memory or address
+# print(id(s11[1]))     #/Both shares same memory or address
 
 
 # p1='p'
@@ -65,15 +65,47 @@
 
 
 #String Slicing
-a="Guido Van Rossum"
-print(a)
-print(a[10])
+# a="Guido Van Rossum"
+# print(a)
+# print(a[10])
 #Slicing Syntax Slicing Syntax Slicing Syntax
 #>>>string_name[start:stop:step]
 # print(a[::])
-print(a[0:5:1])
-print(a[0:9:2])
-print(a[15:9:1])
-print(a[15:9:-1])
-print(a[-1:-7:-1])
-print(a[::-1])
+# print(a[0:5:1])
+# print(a[0:9:2])
+# print(a[15:9:1])
+# print(a[15:9:-1])
+# print(a[-1:-7:-1])
+# print(a[::-1])
+
+
+#Substring
+# s=input("Enter a string:")
+# for i in range(0,len(s)-2):
+#     n=s[i:i+3]
+#     print(n)
+
+
+#ignore first annd last element
+# s=input("Enter a string:")
+# print(s[1:len(s)-1])
+
+#reverse string and ignore first and last element
+# s=input("Enter a string:")
+# print(s[len(s)-2:0:-1])
+
+#palindrome
+# s=input("Enter a string:")
+# if s==s[::-1]:
+#     print("palindrome")
+# else:
+#     print("Not palindrome")
+
+# def pal(s):
+#     if s==s[::-1]:
+#         print("palindrome")
+#     else:
+#         print("Not palindrome")
+
+# n=input("Enter a string:")
+# pal(n)

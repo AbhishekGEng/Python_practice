@@ -13,7 +13,7 @@
 
 x=99
 def fun():
-    global x
+    global x  #To make the local variable to global
     x=999
     print(x)
 fun()
